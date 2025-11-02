@@ -1,0 +1,133 @@
+# Nigeria Multi-Hazard Impact-Based Forecasting Configuration
+
+# Project Settings
+project:
+  name: "Nigeria IBF System"
+  region: "Borno, Adamawa, and Yobe (BAY) States"
+  version: "1.0.0"
+
+# Data Paths
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  output_dir: "data/outputs"
+  
+  # Expected input files
+  files:
+    centroids: "nigeria_centroids_1km.hdf5"
+    exposure: "exposure_nigeria_lga_aggregated"
+    displacement: "dtm_displacement_data_cleaned.csv"
+    displacement_monthly: "displacement_events_monthly.csv"
+    displacement_stats: "displacement_statistics_by_lga.csv"
+    flood_events: "nema_flood_data_cleaned.csv"
+    flood_risk: "nema_flood_risk_by_lga.csv"
+
+# Geographic Settings
+geography:
+  focus_states:
+    - "Borno"
+    - "Adamawa"
+    - "Yobe"
+  
+  # Nigeria bounding box
+  bounds:
+    min_lat: 4.0
+    max_lat: 14.0
+    min_lon: 3.0
+    max_lon: 15.0
+
+# Hazard Model Settings
+hazards:
+  flood:
+    enabled: true
+    forecast_horizon_days: 30
+    
+    # Alert thresholds (probability)
+    alert_levels:
+      green: [0.0, 0.2]
+      yellow: [0.2, 0.4]
+      orange: [0.4, 0.7]
+      red: [0.7, 1.0]
+  
+  displacement:
+    enabled: true
+    forecast_horizon_days: 30
+    
+    # Risk thresholds
+    risk_levels:
+      low: [0.0, 0.25]
+      medium: [0.25, 0.5]
+      high: [0.5, 0.75]
+      very_high: [0.75, 1.0]
+
+# Impact Assessment Settings
+impact:
+  # Sectoral impact ratios (fraction of people at risk needing assistance)
+  sectoral_ratios:
+    flood:
+      health: 0.3
+      shelter: 0.5
+      wash: 0.8
+      food: 0.6
+      protection: 0.2
+    
+    displacement:
+      health: 0.4
+      shelter: 0.9
+      wash: 0.9
+      food: 0.8
+      protection: 0.3
+  
+  # Priority levels
+  priority_thresholds:
+    people_at_risk:
+      low: [0, 1000]
+      medium: [1000, 5000]
+      high: [5000, 20000]
+      critical: [20000, 9999999]
+
+# Visualization Settings
+visualization:
+  style: "seaborn-v0_8-darkgrid"
+  figsize: [12, 8]
+  dpi: 300
+  
+  # Color schemes
+  colors:
+    risk: ["#2ecc71", "#f39c12", "#e67e22", "#e74c3c"]
+    impact: ["#3498db", "#9b59b6", "#e74c3c", "#c0392b"]
+    alert:
+      Green: "#2ecc71"
+      Yellow: "#f1c40f"
+      Orange: "#e67e22"
+      Red: "#e74c3c"
+
+# Reporting Settings
+reporting:
+  format: "text"
+  include_maps: true
+  include_charts: true
+  
+  # Output formats
+  outputs:
+    - bulletin_text
+    - csv_tables
+    - png_maps
+    - dashboard
+
+# Analysis Settings
+analysis:
+  min_historical_events: 5  # Minimum events for reliable analysis
+  confidence_threshold: 0.7  # Minimum confidence for forecasts
+  
+  # Spatial settings
+  spatial:
+    grid_resolution_km: 1
+    buffer_radius_km: 50
+    max_distance_km: 100
+
+# Logging Settings
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "data/outputs/ibf_system.log"
