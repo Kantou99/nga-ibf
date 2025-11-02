@@ -1,0 +1,48 @@
+======================================================================
+Nigeria IBF System - FORECAST SUMMARY
+======================================================================
+Generated: 2025-10-31 15:24
+Forecast Horizon: 4 weeks (conflict), 2 weeks (flood)
+
+OVERVIEW
+----------------------------------------------------------------------
+Total LGAs analyzed: 123
+Forecasts generated: 63
+Alerts issued: 4
+
+ALERT BREAKDOWN
+----------------------------------------------------------------------
+CRITICAL     0 alerts
+SEVERE       1 alerts
+MODERATE     2 alerts
+
+TOP 5 PRIORITY AREAS
+----------------------------------------------------------------------
+
+1. Tafawa-Balewa, Bauchi
+   Hazard: conflict
+   Expected Displacement: 12,933
+   Probability: 90%
+   Alert Level: MODERATE
+
+2. Madagali, Adamawa
+   Hazard: conflict
+   Expected Displacement: 25,916
+   Probability: 41%
+   Alert Level: SEVERE
+
+3. Akko, Gombe
+   Hazard: conflict
+   Expected Displacement: 12,442
+   Probability: 85%
+   Alert Level: MODERATE
+
+4. Ardo-Kola, Taraba
+   Hazard: conflict
+   Expected Displacement: 5,555
+   Probability: 82%
+   Alert Level: LOW
+
+======================================================================
+END OF REPORT
+======================================================================

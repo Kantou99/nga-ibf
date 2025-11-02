@@ -1,0 +1,15 @@
+======================================================================
+NIGERIA IBF SYSTEM - EARLY WARNING BULLETIN
+======================================================================
+Date: 2025-10-31 15:24
+Total Alerts: 4
+
+
+======================================================================
+ALL ALERTS SUMMARY
+======================================================================
+
+Tafawa-Balewa             (Bauchi      ) conflict Disp: 12,933 Prob: 90% [MODERATE]
+Madagali                  (Adamawa     ) conflict Disp: 25,916 Prob: 41% [SEVERE]
+Akko                      (Gombe       ) conflict Disp: 12,442 Prob: 85% [MODERATE]
+Ardo-Kola                 (Taraba      ) conflict Disp:  5,555 Prob: 82% [LOW]

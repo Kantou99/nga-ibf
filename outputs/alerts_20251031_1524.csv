@@ -1,0 +1,5 @@
+lga,state,forecast_week,expected_displacement,lower_bound,upper_bound,probability,confidence,method,risk_level,historical_events,trend,hazard_type,expected_affected,in_flood_season,alert_level,alert_priority
+Tafawa-Balewa,Bauchi,4,12933,6829.0,19038.0,0.9,high,historical_trend,very_high,41,stable,conflict,,,moderate,11.64
+Madagali,Adamawa,4,25916,16394.0,35438.0,0.41,high,historical_trend,very_high,41,stable,conflict,,,severe,10.63
+Akko,Gombe,4,12442,7674.0,17211.0,0.85,high,historical_trend,very_high,42,stable,conflict,,,moderate,10.58
+Ardo-Kola,Taraba,4,5555,1258.0,9851.0,0.82,high,historical_trend,very_high,64,increasing,conflict,,,low,4.56

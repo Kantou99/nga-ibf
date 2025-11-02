@@ -1,0 +1,31 @@
+LGA-AGGREGATED EXPOSURE DATA SUMMARY
+======================================================================
+
+Source: WorldPop 2020 Nigeria Population
+Aggregation Level: Local Government Areas (LGAs)
+Reference Year: 2020
+
+COVERAGE
+----------------------------------------------------------------------
+Number of LGAs: 775
+Total population: 216,173,376
+
+POPULATION STATISTICS
+----------------------------------------------------------------------
+Mean population per LGA: 278,933.4
+Median population per LGA: 240,794.6
+Max population (LGA): 2,674,202
+Min population (LGA): 40,087
+
+TOP 10 MOST POPULATED LGAs
+----------------------------------------------------------------------
+Abuja                                          2,674,202
+Alimosho                                       2,093,590
+Kosofe                                         1,036,687
+Oshodi/Isolo                                   1,010,018
+Ajeromi/Ifelodun                                 945,113
+Ojo                                              928,624
+Ifo                                              856,753
+Mushin                                           853,248
+AdoOdo/Ota                                       837,908
+Maiduguri                                        829,518
